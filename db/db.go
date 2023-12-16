@@ -7,7 +7,7 @@ import (
 )
 
 func OpenDB() (*sql.DB, error) {
-	conn := "postgresql://postgres:Phoeblex25@127.0.0.1/MyZoo?sslmode=disable"
+	conn := "postgresql://postgres:password@127.0.0.1/MyZoo?sslmode=disable"
 	db, err := sql.Open("postgres", conn)
 	if err != nil {
 		return nil, err
